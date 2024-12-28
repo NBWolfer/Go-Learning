@@ -1,6 +1,6 @@
 # Go Learning
 
-This repo created for keeping things while I learning Go.
+This repo was created to store things I learned in Go.
 
 **Topics Covered:**
 * Arithmetic Logic
