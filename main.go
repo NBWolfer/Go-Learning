@@ -4,7 +4,8 @@ package main
 import (
 	"fmt"
 	basics "go-learning/packages/basics"
-	data_structures "go-learning/packages/data_structures"
+	binary_tree "go-learning/packages/binary_tree"
+	single_linked_list "go-learning/packages/single_linked_list"
 )
 
 func main() {
@@ -12,6 +13,7 @@ func main() {
 
 	fmt.Println("1. Calculator")
 	fmt.Println("2. Data Structures")
+	fmt.Println("3. Binary Tree")
 	fmt.Println("0. Exit")
 
 	var choice int
@@ -30,7 +32,10 @@ func main() {
 			basics.Calculator()
 		case 2:
 			fmt.Printf("\033[H\033[2J")
-			data_structures.LinkedListDemo()
+			single_linked_list.LinkedListDemo()
+		case 3:
+			fmt.Printf("\033[H\033[2J")
+			binary_tree.BinaryTreeDemo()
 		default:
 			fmt.Println("Invalid choice")
 		}
@@ -41,6 +46,7 @@ func main() {
 		fmt.Printf("\033[H\033[2J")
 		fmt.Println("1. Calculator")
 		fmt.Println("2. Data Structures")
+		fmt.Println("3. Binary Tree")
 		fmt.Println("0. Exit")
 		fmt.Print("Enter your choice: ")
 		fmt.Scanln(&choice)
